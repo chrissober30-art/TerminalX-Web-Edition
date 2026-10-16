@@ -1,4 +1,3 @@
-
 #!/usr/bin/env node
 const fs = require('fs');
 const vm = require('vm');
@@ -11,7 +10,6 @@ function loadBackgroundMatcher() {
   // Provide a minimal chrome stub the background script expects when run in a VM
   const chromeStub = {
     storage: { local: { get: (_keys, cb) => cb({}) } },
-    scripting: { executeScript: async () => {} },
     tabs: {
       onUpdated: { addListener: () => {} },
       onActivated: { addListener: () => {} },
