@@ -29,3 +29,11 @@ Create or open a script
 Press Run Script to execute it on the current page
 
 View logs in the Terminal Output panel
+
+Testing
+
+A small test runner is available to validate URL pattern matching (no test framework required):
+
+  node tests/matchesPattern.test.js
+
+It checks both the module matcher and the background runtime copy for parity on common patterns and edge cases.
